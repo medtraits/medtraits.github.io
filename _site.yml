@@ -1,7 +1,6 @@
 name: "my-website"
 title: "Med Traits"
 theme: theme.css
-google_analytics: "G-FG6L3SH247"
 description: |
   medtraits
 output_dir: "."

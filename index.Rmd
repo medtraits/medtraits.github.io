@@ -1,5 +1,6 @@
 ---
 output: html_document
+title: "Medtraits"
 ---
 
 This website is designed to host Med Traits
