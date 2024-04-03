@@ -2,7 +2,11 @@
 output: html_document
 ---
 
-```{r, echo = F}
-knitr::kable(readxl::read_excel("files/Complete_Traits.xlsx"), format = "html")
+This website is designed to host Med Traits
+
+```{r, echo = F, warning=F, message = FALSE}
+library(tidyverse); library(kableExtra)
+table = knitr::kable(readxl::read_excel("files/Complete_Traits.xlsx"), format = "html")
+table %>% kbl(escape = F) %>% kable_paper(full_width = F, position = "left", font_size = 11)
 ```
 
