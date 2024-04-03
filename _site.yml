@@ -1,0 +1,6 @@
+name: "Medtraits"
+navbar:
+  title: "medtraits"
+left:
+  - text: "Home"
+href: index.html
