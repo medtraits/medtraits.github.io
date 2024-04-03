@@ -1,12 +1,7 @@
 ---
-title: "medtraits online database"
 output: html_document
 ---
 
-
 ```{r, echo = F}
-# Read the Excel file
-data <- readxl::read_excel("files/Complete_Traits.xlsx")
-# Convert data to HTML table
-knitr::kable(data, format = "html")
+knitr::kable(readxl::read_excel("files/Complete_Traits.xlsx"), format = "html")
 ```
