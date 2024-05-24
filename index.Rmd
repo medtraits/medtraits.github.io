@@ -3,13 +3,109 @@ output: html_document
 title: "Medtraits"
 ---
 
-Hello ?
-This website is designed to host Med Traits
+##### This website is designed to host Med Traits 
+[Coming soon]
+
+<!-- Two-column layout start -->
+<div style="display: flex;">
+<div style="flex: 33.3%; padding: 10px;">
+
+#### 1) Feeding
+a) no (autotroph)
+b) active filter feeders with cilia
+c) active filter feeders by pumping
+d) passive filter feeders
+e) herbivores and/or grazers
+f) carnivores
+g) detritivores
+
+#### 2) Maximum longevity
+1) < 1 year - 1 year
+2) 2 years - 5 years
+3) 5 - 10 years
+4) 10 - 20 years
+5) ≥ 20 years
+
+#### 3) Carbon storage
+a) yes
+b) potentially
+c) no
+
+</div>
+<div style="flex: 33.3%; padding: 10px;">
+<!-- You can add more content here -->
+
+#### 4) Morphological form
+a) boring
+b) encrusting
+c) filamentous
+d) stolonial
+e) foliose-erect
+f) articulated
+g) coarse branched
+h) cup-like
+i) massive encrusting
+j) massive hemispheric
+k) massive-erect
+l) tree-like
+
+#### 5) Energetic resource
+a) photosynthetic autotroph
+b) photo-heterotroph
+c) heterotroph
 
 
-```{r, echo = F, warning=F, message = FALSE}
-library(tidyverse); library(kableExtra)
-table = knitr::kable(readxl::read_excel("files/Complete_Traits.xlsx"), format = "html")
-kable(table, format = "html", escape = FALSE, table.attr = "class='table'") %>%
-                kable_styling(full_width = FALSE, position = "left", font_size = 11)
-```
+#### 6) Motility
+a) sessile 
+b) vagile
+
+</div>
+<div style="flex: 33.3%; padding: 10px;">
+<!-- You can add more content here -->
+
+#### 7) Coloniality
+1) solitary
+2) colonial, modular or gregarious
+
+#### 8) Height (Size)
+1) very small (< 2 cm)
+2) small (2 - 5 cm)
+3) medium (5 - 20 cm)
+4) large (20 - 50 cm)
+5) very large (> 50 cm)
+
+#### 9) Growth rates
+1) extreme slow (< 1 cm.yr<sup>-1</sup>)
+2) slow (_ca._ 1 cm.yr<sup>-1</sup>)
+3) moderate (> 1 - 5 cm.yr<sup>-1</sup>)
+4) high (5 - 10 cm.yr<sup>-1</sup>)
+5) very high (> 10 cm.yr<sup>-1</sup>)
+
+#### 10) Calcification
+a) without
+b) with calcareous structures
+
+</div>
+</div>
+<!-- Two-column layout end -->
+
+<!-- Continue with your regular markdown content -->
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+
+# Read the Excel file
+table_data <- read_excel("files/Complete_Traits.xlsx")
+
+# Apply italics to the first column
+table_data[[1]] <- paste0("<i>", table_data[[1]], "</i>")
+
+# Create the table
+table <- knitr::kable(table_data, format = "html", escape = FALSE) %>%
+  kable_styling(full_width = FALSE, position = "left", font_size = 11) %>%
+  scroll_box(width = "100%", height = "400px")
+
+# Display the table
+table
