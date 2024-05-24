@@ -3,23 +3,9 @@ output: html_document
 title: "Medtraits"
 ---
 
+Hello ?
 This website is designed to host Med Traits
 
--   Feeding,
-    -   a) no (autotroph)
-
-    -   b) active filter feeders with cilia
-
-    -   c) active filter feeders by pumping
-
-    -   d) passive filter feeders
-
-    -   e) herbivores and/or grazers
-
-    -   f) carnivores
-
-    -   g) detritivores
--   Maximum longevity, consisting of five categories: (1) \< 1 year - 1 year, (2) 2 years - 5 years, (3) 5 - 10 years, (4) 10 - 20 years, and (5) ≥ 20 years; (C) Coloniality, consisting of two categories: (1) solitary and (2) colonial or modular or gregarious; (D) Morphological form, consisting of eight categories: (a) boring, (b) encrusting, (c) filamentous, (d) stolonial, (e) foliose-erect, (f) articulated, (g) coarse branched, (h) cup-like, (i) massive encrusting, (j) massive hemispheric, (k) massive-erect, and (l) tree-like; (E) Carbon storage, consisting of three categories: (a) yes, (b) potentially, and (c) no; (F) Energetic resource, consisting of three categories: (a) photosynthetic autotroph, (b) photo-heterotroph, and (c) heterotroph; (G) Height (size), consisting of five categories: (1) very small (\< 2 cm), (2) small (2 - 5 cm), (3) medium (5 - 20 cm), (4) large (20 - 50 cm), and (5) very large (\> 50 cm); (H) Growth rates, consisting of five categories: (1) extreme slow (\< 1 cm.yr-1), (2) slow (ca. 1 cm.yr-1), (3) moderate (\> 1 - 5 cm.yr-1), (4) high (5 - 10 cm.yr-1), (5) very high (\> 10 cm.yr-1); (I) Calcification, consisting of two categories, (a) without and (b) with calcareous structures; and (J) Motility, consisting of two 14 categories, (a) sessile and (b) vagile
 
 ```{r, echo = F, warning=F, message = FALSE}
 library(tidyverse); library(kableExtra)
