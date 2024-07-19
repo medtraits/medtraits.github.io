@@ -1,9 +1,7 @@
 ---
 output: html_document
-title: "Medtraits"
+title: "Mediterranean Traits Database – MedTraits"
 ---
-
-##### This website is designed to host Med Traits 
 
 <!-- Two-column layout start -->
 <div style="display: flex;">
