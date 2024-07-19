@@ -4,7 +4,6 @@ title: "Medtraits"
 ---
 
 ##### This website is designed to host Med Traits 
-[Coming soon]
 
 <!-- Two-column layout start -->
 <div style="display: flex;">
