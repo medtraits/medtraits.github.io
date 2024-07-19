@@ -1,2 +1,2 @@
 # medtraits.github.io
-medtraits online database 
+The medtraits database can be found here: https://medtraits.github.io
