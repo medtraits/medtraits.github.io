@@ -8,14 +8,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Research"
-      href: research.html    
-    - text: "Projects"
-      href: projects.html
-    - text: "Students & Teaching"
-      href: supervision.html
     - text: "Publications"
-      href: publications.html
-    - text: "Talks & Outreaches"
-      href: outreaches.html
+      href: publications.html    
+    - text: "Distributions"
+      href: distributions.html
+    - text: "Contact"
+      href: contact.html    
 search: true
