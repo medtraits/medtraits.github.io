@@ -1,6 +1,6 @@
 ---
-output: html_document
 title: "Publications associated"
+output: html_document
 ---
 
 [coming soon]
