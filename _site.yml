@@ -8,6 +8,8 @@ navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "Publications"
+      href: publications.html    
     - text: "Distributions"
       href: distributions.html
     - text: "Contact"
